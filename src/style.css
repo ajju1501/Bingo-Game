@@ -1,0 +1,160 @@
+body,input{
+    justify-items: center;
+    /* background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); */
+    background-image: url(/src/images/background3.jpg) ;
+}
+#td{
+    border-radius: 5px;
+    border-style: outset;
+    border-color: black;
+    height: 50px;
+    width: 50px;
+    color: rgb(4, 43, 15);
+    font-weight: bolder;
+}
+#userinput{
+    border-radius: 5px;
+    border-style: outset;
+    border-color: black;
+    height: 50px;
+    width: 50px;
+    color: rgb(4, 43, 15);
+    font-weight: bolder;
+}
+#h1{
+    font-size: 40px;
+    color: #920404;
+}
+h2{
+    margin-right: 100px;
+}
+#board{
+    margin-top: 100px;
+    margin-left: 20px;
+    
+}
+#buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 220px;
+    margin-left: 10px;
+}
+#start{
+    margin-top: 70px;
+}
+#main{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+#bingo{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-left: -110px;
+    color:black;
+    margin-top: 40px;
+}
+#bingo2{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-left: -110px;
+    color:black;
+    /* margin-top: 10px; */
+}
+#over{
+    font-size: 60px;
+    margin-left: -80px;
+    color: white;
+}
+#input1{
+    margin-top: 250px;
+}
+#guess{
+    margin-top: 200px;
+}
+#computertable{
+    display: none;
+}
+#fill{
+    color: rgb(241, 242, 251);
+    /* background:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(32,80,213,1) 35%, rgba(0,212,255,1) 100%); */
+    background-color: rgb(66, 34, 205);
+    border-radius: 10px;
+    height: 50px;
+    font-weight: bolder;
+}
+#fill:hover{background-image: url(/src/images/button\ image.webp);}
+#again,#startagain{
+    color: rgb(241, 242, 251);
+    /* background:  linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(30,125,31,1) 35%); */
+    background: green;
+    border-radius: 10px;
+    height: 50px;
+    font-weight: bolder;
+}
+#again:hover{background-image: url(/src/images/button\ image.webp);
+}
+#startagain:hover{background-image: url(/src/images/button\ image.webp);}
+#instructionModal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.5);
+    }
+.modal-content {
+        background: rgb(49, 44, 66);
+        padding: 20px;
+        width: 70%;
+        margin: 15% auto;
+        text-align: center;
+        border-radius: 10px;
+        color: white;
+        font-weight: bolder;
+        border-color: aliceblue;
+    }
+#gotit,#introbutton{
+    height: 40px;
+    width: 90px;
+    border-radius: 10px;
+    border-color: blue;
+    background-color: rgb(66, 34, 205);
+    color: white;
+    font-weight: bolder;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+#gotit:hover{background-color: rgb(143, 191, 211);
+    color: black;
+}
+#introbutton:hover{
+    background-color: rgb(143, 191, 211);
+    color: black;
+}
+#guide{
+    margin-left: 100px;
+}
+#win {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+#winner{
+    background: rgb(99, 80, 160);
+    padding: 20px;
+    width: 70%;
+    margin: 15% auto;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+}
