@@ -1,7 +1,7 @@
 body,input{
     justify-items: center;
     /* background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); */
-    background-image: url(./src/images/background3.jpg) ;
+    background-image: url(/src/images/background3.jpg) ;
 }
 #td{
     border-radius: 5px;
@@ -86,7 +86,7 @@ h2{
     height: 50px;
     font-weight: bolder;
 }
-#fill:hover{background-image: url(./src/images/button\ image.webp);}
+#fill:hover{background-image: url(/src/images/button\ image.webp);}
 #again,#startagain{
     color: rgb(241, 242, 251);
     /* background:  linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(30,125,31,1) 35%); */
@@ -95,9 +95,9 @@ h2{
     height: 50px;
     font-weight: bolder;
 }
-#again:hover{background-image: url(./src/images/button\ image.webp);
+#again:hover{background-image: url(/src/images/button\ image.webp);
 }
-#startagain:hover{background-image: url(./src/images/button\ image.webp);}
+#startagain:hover{background-image: url(/src/images/button\ image.webp);}
 #instructionModal {
         display: none;
         position: fixed;
