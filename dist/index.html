@@ -3,12 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-  <script type="module" crossorigin src="/assets/index-BhuiW1Sb.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-BsPtf2P2.css">
+    <title>Bingo</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon-BnU_sVPB.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32-DM2mKl0i.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16-NW62gXLe.png">
+<link rel="manifest" href="/site.webmanifest">
+  <script type="module" crossorigin src="/assets/index-BHQO9Lq-.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-DR8qDGov.css">
 </head>
 <body>
     <h1 id="h1">BINGO - GAME</h1>
+    <h3 id="intro">Instruction's -- <button id="introbutton" >Click Here</button></h3>
     <div id="main">
         <div id="board">
             <table id="table">
@@ -18,14 +23,17 @@
     <div id="buttons">
         
         <button id="fill" >Fill Board</button>
-        <button id="again">Start Again</button>
+        <button id="startagain">Play Again</button>
     </div>
     <div id="guess">
+      <p><b>Enter Your Name:</b></p>
+      <input id="input2">
       <p><b>Computer guess: </b></p>
     </div>
     <div id="input1">
       <P><b>Give Input here and click enter</b></P>
-      <input id="td">
+      <input  id="userinput">
+      <p id="wronginput"></p>
     </div>
     </div>
     <div id="bingo">
@@ -36,7 +44,7 @@
     <h3 id="G">G</h3>
     <h3 id="O">O</h3>
     </div>
-    <div id="bingo">
+    <div id="bingo2">
       <h3>Computer Status:  </h3>
       <h3 id="B1">B</h3>
       <h3 id="I1">I</h3>
@@ -46,7 +54,31 @@
       </div>
     <div id="OVER"><p id="over"></p></div>
 
-    
+    <div id="instructionModal">
+      <div class="modal-content">
+          <h2 id="guide">Instruction's</h2>
+          <div id="rules">
+          <p>Enter a number between 1 and 25.</p>
+          <p>Click "Fill Board" to randomly populate the board.</p>
+          <p>The input will be marked on both the Player's and the Computer's boards.</p>
+          <p>After each move, the game will check all rows and columns.</p>
+          <p>The status of both the Player and the Computer will be updated accordingly.</p>
+          <p>If the numbers match a winning pattern, the player wins!</p>
+          <p>When someone wins, their name will be displayed on the screen.</p>
+          <p>To play again, click the "Play Again" button.</p>
+          </div>
+          
+          <button id="gotit">Got it!</button>
+      </div>
+  </div>
+
+  <div id="win">
+    <div id="winner">
+      <p id="winnername"></p>
+      
+      <button id="again">Play Again</button>
+    </div>
+  </div>
 
 </body>
 </html>
